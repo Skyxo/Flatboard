@@ -146,189 +146,172 @@
 
             <div class="container">
 
+                <div class="board-topic">
+                    <h3>It's time to discuss!</h3>
+                </div>
+
                 <div class="board-list">
 
                     <div class="board simple-board" data-board-id="1">
 
-                        <div classs="row">
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <div class="board-head">
 
-                                <div class="board-icon">
-                                    <i class="fa fa-newspaper-o"></i>
-                                </div>
-
+                            <div class="board-icon">
+                                <i class="fa fa-newspaper-o"></i>
                             </div>
 
-                            <div class="col-lg-5 col-md-5 col-sm-8 col-xs-8">
-
-                                <div class="board-title">
-                                    <span>Einfaches Forum</span>
-                                </div>
-
+                            <div class="board-title">
+                                <span>Einfaches Forum</span>
                             </div>
 
-                            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-
-                                <div class="board-last-thread">
-
-                                </div>
-
+                            <div class="board-last-thread hidden-sm hidden-xs">
+                                <span>Letzter Post</span>
                             </div>
 
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-
-                                <div class="board-badge">
-                                    <span class="badge">5</span>
-                                </div>
-
+                            <div class="board-badge">
+                                <span class="badge">5</span>
                             </div>
+
                         </div>
 
                     </div>
 
-
-                    <div class="board category">
+                    <div class="board simple-board">
 
                         <div class="board-head">
 
-                            <div classs="row">
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="board-icon">
+                                <i class="fa fa-newspaper-o"></i>
+                            </div>
 
-                                    <div class="board-icon">
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                            <div class="board-title">
+                                <span>Einfaches Forum</span>
+                            </div>
 
-                                </div>
+                            <div class="board-last-thread hidden-sm hidden-xs">
+                                <span>Letzter Post</span>
+                            </div>
 
-                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-
-                                    <div class="board-title">
-                                        <span>Kategorie</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-
-                                    <div class="board-badge">
-                                        <span class="badge">8</span>
-                                    </div>
-
-                                </div>
+                            <div class="board-badge">
+                                <span class="badge">5</span>
                             </div>
 
                         </div>
 
                         <div class="subboard-list">
 
-                            <div class="board subboard simple-subboard">
-                                <div classs="row">
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <div class="subboard simple-subboard">
 
-                                        <div class="board-icon">
-                                            <i class="fa fa-empire"></i>
-                                        </div>
-
+                                <div class="board-head">
+                                    <div class="board-icon">
+                                        <i class="fa fa-star-o"></i>
                                     </div>
 
-                                    <div class="col-lg-5 col-md-5 col-sm-8 col-xs-8">
-
-                                        <div class="board-title">
-                                            <span>Ein Unterforum</span>
-                                        </div>
-
+                                    <div class="board-title">
+                                        <span>Einfaches Forum</span>
                                     </div>
 
-                                    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-
-                                        <div class="board-last-thread">
-
-                                        </div>
-
+                                    <div class="board-last-thread hidden-sm hidden-xs">
+                                        <span>Letzter Post</span>
                                     </div>
 
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-
-                                        <div class="board-badge">
-                                            <span class="badge">5</span>
-                                        </div>
-
+                                    <div class="board-badge">
+                                        <span class="badge">5</span>
                                     </div>
                                 </div>
+
                             </div>
 
-                            <div class="board subboard simple-subboard">
-                                <div classs="row">
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        </div>
 
-                                        <div class="board-icon">
-                                            <i class="fa fa-empire"></i>
-                                        </div>
+                    </div>
 
-                                    </div>
+                    <div class="board category">
 
-                                    <div class="col-lg-5 col-md-5 col-sm-8 col-xs-8">
+                        <div class="board-head">
 
-                                        <div class="board-title">
-                                            <span>Ein Unterforum</span>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-
-                                        <div class="board-last-thread">
-
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-
-                                        <div class="board-badge">
-                                            <span class="badge">5</span>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="board-icon">
+                                <i class="fa fa-newspaper-o"></i>
                             </div>
 
-                            <div class="board subboard extended-subboard">
+                            <div class="board-title">
+                                <span>Kategorie</span>
+                            </div>
+
+                            <div class="board-badge">
+                                <span class="badge">3</span>
+                            </div>
+
+                        </div>
+
+                        <div class="subboard-list">
+
+                            <div class="subboard simple-subboard">
 
                                 <div class="board-head">
 
-                                    <div classs="row">
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="board-icon">
+                                        <i class="fa fa-newspaper-o"></i>
+                                    </div>
 
-                                            <div class="board-icon">
-                                                <i class="fa fa-empire"></i>
-                                            </div>
+                                    <div class="board-title">
+                                        <span>Ein Unterforum</span>
+                                    </div>
 
-                                        </div>
+                                    <div class="board-last-thread hidden-sm hidden-xs">
+                                        <span>Letzter Post</span>
+                                    </div>
 
-                                        <div class="col-lg-5 col-md-5 col-sm-8 col-xs-8">
+                                    <div class="board-badge">
+                                        <span class="badge">5</span>
+                                    </div>
 
-                                            <div class="board-title">
-                                                <span>Ein Unterforum</span>
-                                            </div>
+                                </div>
 
-                                        </div>
+                            </div>
 
-                                        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+                            <div class="subboard simple-subboard">
 
-                                            <div class="board-last-thread">
+                                <div class="board-head">
 
-                                            </div>
+                                    <div class="board-icon">
+                                        <i class="fa fa-newspaper-o"></i>
+                                    </div>
 
-                                        </div>
+                                    <div class="board-title">
+                                        <span>Ein zweites Unterforum</span>
+                                    </div>
 
-                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                    <div class="board-last-thread hidden-sm hidden-xs">
+                                        <span>Letzter Post</span>
+                                    </div>
 
-                                            <div class="board-badge">
-                                                <span class="badge">5</span>
-                                            </div>
+                                    <div class="board-badge">
+                                        <span class="badge">5</span>
+                                    </div>
 
-                                        </div>
+                                </div>
+
+                            </div>
+
+                            <div class="subboard extended-subboard">
+
+                                <div class="board-head">
+
+                                    <div class="board-icon">
+                                        <i class="fa fa-newspaper-o"></i>
+                                    </div>
+
+                                    <div class="board-title">
+                                        <span>Ein Unterforum mit Unterforen</span>
+                                    </div>
+
+                                    <div class="board-last-thread hidden-sm hidden-xs">
+                                        <span>Letzter Post</span>
+                                    </div>
+
+                                    <div class="board-badge">
+                                        <span class="badge">5</span>
                                     </div>
 
                                 </div>
@@ -336,21 +319,33 @@
                                 <div class="subboard-list">
 
                                     <div class="subboard last-grade-subboard">
-                                        <div class="board-title">
-                                            <span>Unterforum</span>
+
+                                        <div class="board-head">
+                                            <div class="board-title">
+                                                <span>Unterforum</span>
+                                            </div>
                                         </div>
+
                                     </div>
 
                                     <div class="subboard last-grade-subboard">
-                                        <div class="board-title">
-                                            <span>Lorem ipsum</span>
+
+                                        <div class="board-head">
+                                            <div class="board-title">
+                                                <span>Unterforum</span>
+                                            </div>
                                         </div>
+
                                     </div>
 
                                     <div class="subboard last-grade-subboard">
-                                        <div class="board-title">
-                                            <span>Tests</span>
+
+                                        <div class="board-head">
+                                            <div class="board-title">
+                                                <span>Unterforum</span>
+                                            </div>
                                         </div>
+
                                     </div>
 
                                 </div>
@@ -358,6 +353,27 @@
 
                             </div>
 
+                            <div class="subboard simple-subboard">
+
+                                <div class="board-head">
+                                    <div class="board-icon">
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+
+                                    <div class="board-title">
+                                        <span>Einfaches Forum</span>
+                                    </div>
+
+                                    <div class="board-last-thread hidden-sm hidden-xs">
+                                        <span>Letzter Post</span>
+                                    </div>
+
+                                    <div class="board-badge">
+                                        <span class="badge">5</span>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -372,6 +388,10 @@
         </section>
 
     </main>
+
+    <footer class="footer-wrapper">
+
+    </footer>
 
     <script type="text/javascript">
         window.Laravel = {

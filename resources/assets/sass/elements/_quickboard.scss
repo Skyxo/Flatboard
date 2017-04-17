@@ -20,9 +20,9 @@
         & {
             background-color: $light;
             color: $dark;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px 0px lighten($dark, 10%);
-            margin-bottom: 15px;
+            border-radius: $fb-board-border-radius;
+            @include board-box-shadow;
+            margin-bottom: $fb-margin-bottom;
         }
 
         .quickboard-head {
@@ -35,10 +35,10 @@
 
             .quickboard-head-icon {
                 display: table-cell;
-                font-size: 18px;
-                padding: 11px;
+                font-size: $fb-board-icon-size;
+                padding: $fb-board-icon-padding;
                 text-align: center;
-                min-width: 45px;
+                width: $fb-board-head-icon-width;
             }
 
             .quickboard-head-title {
@@ -54,12 +54,7 @@
                 }
 
                 .badge {
-                    display: table-cell;
-                    padding: 4px 15px;
-                    font-size: 16px;
-                    color: $light;
-                    background-color: $bg-light;
-                    border-radius: 5px;
+                    @include fb-board-badge;
                 }
 
             }
@@ -78,10 +73,4 @@
 
 }
 
-@mixin board-icon-padding {
 
-}
-
-@mixin board-box-shadow {
-    @include box-shadow(0 4px 10px 0px lighten($dark, 10%))
-}

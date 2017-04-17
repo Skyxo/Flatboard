@@ -20,15 +20,15 @@
             }
 
             &:before {
-                position: absolute;
+                position: fixed;
                 content: ' ';
                 height: 100%;
                 width: 100%;
                 top: 0;
                 left: 0;
-                background-image: url('../../img/background_pattern.png');
+                background-image: url('../../img/checkered-pattern.png');
                 background-repeat: repeat;
-                @include opacity(0.5);
+                @include opacity(0.8);
             }
 
             .container {
@@ -37,8 +37,26 @@
         }
 
         &.board {
-            @include light-background();
-            min-height: 250px;
+
+            & {
+                @include light-background();
+                min-height: 250px;
+            }
+
+            .board-topic {
+
+                & {
+                    width: 100%;
+                    margin-top: $fb-margin-bottom * 2;
+                }
+
+                h3 {
+                    text-align: center;
+                    color: $bg-dark;
+                    font-size: $font-size-h4;
+                }
+
+            }
         }
 
     }

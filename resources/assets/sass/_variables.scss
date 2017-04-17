@@ -5,11 +5,25 @@ $bg-light: #ffc371;
 $bg-dark: #ff5f6d;
 
 /**
+ * Board variables
+ */
+$fb-board-border-radius: 5px !default;
+$fb-margin-bottom: 15px !default;
+$fb-board-head-border-color: darken($light, 10%);
+
+// Boardicon
+$fb-board-icon-padding: 11px !default;
+$fb-board-icon-size: 18px !default;
+$fb-board-head-icon-width: 45px !default;
+
+/**
  * Bootstrap variables
  */
 $grid-float-breakpoint: 99999px;
 
 $text-color: $dark;
+$font-family-base: "Raleway", sans-serif !default;
+$font-size-base: 16px;
 
 // Basics of a navbar
 $navbar-height:                    50px !default;
