@@ -1,0 +1,47 @@
+.main-wrapper {
+
+    & {
+        position: relative;
+        width: 100%;
+    }
+
+    section {
+
+        & {
+            position: relative;
+            width: 100%;
+        }
+
+        &.welcome {
+
+            & {
+                height: 100vh;
+                @include colored-background()
+            }
+
+            &:before {
+                position: absolute;
+                content: ' ';
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-image: url('../../img/background_pattern.png');
+                background-repeat: repeat;
+                @include opacity(0.5);
+            }
+
+            .container {
+                height: 100%;
+            }
+        }
+
+        &.board {
+            @include light-background();
+            min-height: 250px;
+        }
+
+    }
+
+}
+

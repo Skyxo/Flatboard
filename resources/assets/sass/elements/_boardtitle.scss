@@ -1,0 +1,68 @@
+.boardtitle-container {
+
+    & {
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+
+    .boardtitle-wrapper {
+
+        & {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            @include translate(0, -50%);
+        }
+
+        .board-title, .board-description {
+            text-align: center;
+            font-weight: 200;
+            margin: 7px 0;
+            color: $light;
+
+            @media (min-width: $screen-tablet) {
+                margin: 17px 0;
+            }
+        }
+
+        .divider {
+            display: block;
+            height: 1px;
+            width: 85%;
+            background-color: $light;
+            margin: 7px auto;
+
+            @media (min-width: $screen-tablet) {
+                width: 65%;
+            }
+
+            @media (min-width: $screen-desktop) {
+                width: 50%;
+            }
+        }
+
+        .board-title {
+
+            @media (min-width: $screen-tablet) {
+                font-size: 48px;
+            }
+
+            @media (min-width: $screen-desktop) {
+                font-size: 58px;
+            }
+
+        }
+
+        .board-description {
+            font-size: 20px;
+
+            @media (min-width: $screen-tablet) {
+                font-size: 24px;
+            }
+        }
+
+    }
+
+
+}

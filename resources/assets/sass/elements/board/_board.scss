@@ -1,0 +1,35 @@
+.board-list {
+    position: relative;
+    width: 100%;
+}
+
+@mixin default-board() {
+
+    position: relative;
+    width: 100%;
+    background-color: $light;
+
+}
+
+.board {
+
+    & {
+        position: relative;
+        width: 100%;
+        background-color: $light;
+        box-shadow:
+    }
+
+    &.simple-board {
+
+    }
+
+    &.category {
+
+    }
+
+    &.subboard {
+
+    }
+
+}
