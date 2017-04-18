@@ -1,0 +1,64 @@
+.subboard-list > .subboard {
+
+    /**
+     * Simple board
+     */
+    &.simple-subboard {
+
+    }
+
+    /**
+     * Extended subboard
+     */
+    &.extended-subboard {
+
+        & {
+
+        }
+
+        > .subboard-list {
+            padding-left: $fb-board-head-icon-width;
+            padding-right: $fb-board-badge-width;
+        }
+
+    }
+
+    .subboard-list {
+
+    }
+
+
+    &.last-grade-subboard {
+
+        & {
+            display: inline-block;
+            padding: 2px 6px;
+            @include board-box-shadow;
+            background-color: $light;
+            border-radius: $fb-board-border-radius;
+        }
+
+        .board-head {
+
+            & {
+
+            }
+
+            .board-title {
+                width: 100%;
+                font-size: 14px;
+                padding: 0;
+            }
+
+        }
+    }
+
+    /**
+     * Category
+     */
+    &.category {
+
+    }
+
+
+}

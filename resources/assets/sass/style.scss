@@ -27,7 +27,11 @@
 @import "elements/quickboard";
 @import "elements/pager";
 
+// import board elements
+@import "elements/board/board-list";
 @import "elements/board/board";
+@import "elements/board/subboard";
+@import "elements/board/board-head";
 
 // import wrapper
 @import "wrapper/main";

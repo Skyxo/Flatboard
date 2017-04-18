@@ -1,0 +1,15 @@
+.board-list {
+    position: relative;
+    width: 100%;
+    margin-top: $fb-margin-bottom * 2;
+    margin-bottom: $fb-margin-bottom * 7;
+}
+
+.subboard-list {
+    padding-left: floor(($fb-board-head-icon-width - $fb-board-icon-padding) / 3);
+
+    @media (min-width: $screen-tablet) {
+        padding-left: $fb-board-head-icon-width - $fb-board-icon-padding;
+    }
+
+}
