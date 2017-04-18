@@ -20,6 +20,13 @@ class BladeServicePorvider extends ServiceProvider
 
     public function boot() {
 
+        /**
+         * Blade template extension for variable declaration in templates
+         *
+         * Example
+         *
+         * {? $variable = 'xyz' ?}
+         */
         Blade::extend(function($value) {
             return preg_replace('/\{\?(.+)\?\}/', '<?php ${1} ?>', $value);
         });

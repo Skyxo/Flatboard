@@ -64,7 +64,7 @@
                                         <i class="fa fa-newspaper-o"></i>
                                     </span>
                                     <span class="quickboard-head-title">
-                                        Ankündigungen
+                                        <a href="{{ route('board.announcements') }}" title="Ankündigungen">Ankündigungen</a>
                                     </span>
                                     <span class="quickboard-head-badge">
                                         <span class="badge">4</span>
@@ -88,7 +88,7 @@
                                         <i class="fa fa-star-o"></i>
                                     </span>
                                     <span class="quickboard-head-title">
-                                        Abbonierte Themen
+                                        <a href="{{ route('board.subscribed') }}" title="Abbonierte Themen">Abbonierte Themen</a>s
                                     </span>
                                     <span class="quickboard-head-badge">
                                         <span class="badge">9</span>
@@ -112,7 +112,7 @@
                                         <i class="fa fa-rss"></i>
                                     </span>
                                     <span class="quickboard-head-title">
-                                        Deine aktiven Themen
+                                        <a href="{{ route('board.activetopics') }}" title="Aktive Themen">Deine aktiven Themen</a>
                                     </span>
                                     <span class="quickboard-head-badge">
                                         <span class="badge">2</span>

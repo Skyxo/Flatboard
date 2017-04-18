@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\DB;
 class BoardController extends Controller
 {
 
+    /**
+     * Show's the board
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showBoard() {
         $boardList = Board::roots()->get();
 
@@ -26,7 +31,38 @@ class BoardController extends Controller
         return $view;
     }
 
-    public function showSingleBoard($boardID) {
+    /**
+     * Show's a single board
+     *
+     * @param Board $board
+     */
+    public function showSingleBoard($board) {
+        $boardList = $board->childBoards();
+
+        $threadList = $board->threads()->paginate(20);
+
+        var_dump($boardList);
+        var_dump($threadList);
+    }
+
+    /**
+     * Announcements
+     */
+    public function showAnnouncements() {
+
+    }
+
+    /**
+     * Subscribed topics
+     */
+    public function showSubscribed() {
+
+    }
+
+    /**
+     * Active topics
+     */
+    public function showActiveTopics() {
 
     }
 

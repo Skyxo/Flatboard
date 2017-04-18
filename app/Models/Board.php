@@ -46,13 +46,17 @@ class Board extends Node
     }
 
     /**
+     * Threads in that board
+     *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function threads() {
-        return $this->hasMany(Thread::class);
+        return $this->hasMany(Thread::class, 'boardID', 'boardID');
     }
 
     /**
+     * Last post in that board
+     *
      * @return Thread
      */
     public function lastPost() {

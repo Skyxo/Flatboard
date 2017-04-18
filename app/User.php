@@ -29,21 +29,40 @@ class User extends Authenticatable
         'password',
     ];
 
-
+    /**
+     * All opened threads of this user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function threads() {
-        return $this->hasMany(Thread::class);
+        return $this->hasMany(Thread::class, 'userID', 'userID');
     }
 
+    /**
+     * All visited threads
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function threadVisited() {
-        return $this->hasMany(ThreadVisit::class);
+        return $this->hasMany(ThreadVisit::class, 'userID', 'userID');
     }
 
+    /**
+     * Profile of this user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function profile() {
-        return $this->hasOne(Profile::class);
+        return $this->hasOne(Profile::class, 'userID', 'userID');
     }
 
+    /**
+     * Password-reset token for this user
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function passwordReset() {
-        return $this->hasOne(PasswordReset::class);
+        return $this->hasOne(PasswordReset::class, 'userID', 'userID');
     }
 
 }

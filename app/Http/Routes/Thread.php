@@ -9,10 +9,16 @@
  * @since       15.04.2017 17:11
  */
 
+use Illuminate\Support\Facades\Route;
+use \App\Models\Thread;
+
+Route::bind('thread', function ($permalink) {
+    return Thread::where('permalink', $permalink)->first();
+});
+
 Route::group(
 
     [
-        'as' => 'thread',
         'middleware' => 'filter'
     ],
 
@@ -20,12 +26,16 @@ Route::group(
 
         Route::get(
 
-            'thread/{threadID}',
+            'thread/{thread}/{page?}',
             [
-                'as'            => 'singlethread',
+                'as'            => 'thread.single',
                 'uses'          => 'ThreadController@showThread'
             ]
 
+        )->where(
+            [
+                'page' => '[0-9]+'
+            ]
         );
 
     }

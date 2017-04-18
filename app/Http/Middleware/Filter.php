@@ -27,6 +27,8 @@ class Filter
 
         $response = $next($request);
 
+
+
         return $response;
     }
 

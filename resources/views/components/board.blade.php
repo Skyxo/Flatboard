@@ -6,7 +6,7 @@
             'icon' => $board->icon,
             'title' => $board->title,
             'description' => $board->description,
-            'link' => '#',
+            'link' => route('board.single', [ 'board' => $board->permalink ]),
             'newPosts' => 'N/A'
         ])
 
@@ -33,7 +33,7 @@
                                             'icon' => $childBoard->icon,
                                             'title' => $childBoard->title,
                                             'description' => $childBoard->description,
-                                            'link' => '#',
+                                            'link' => route('board.single', [ 'board' => $childBoard->permalink ]),
                                             'newPosts' => 'N/A'
                                         ])
 
@@ -55,7 +55,7 @@
                                                                     @component('components.board-head',
                                                                         [
                                                                             'title' => $child->title,
-                                                                            'link' => '#',
+                                                                            'link' => route('board.single', [ 'board' => $child->permalink ]),
                                                                             'onlyTitle' => ''
                                                                         ])
                                                                     @endcomponent

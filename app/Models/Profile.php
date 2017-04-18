@@ -20,8 +20,11 @@ class Profile extends Model
 
     protected $table = 'Profile';
 
+    /**
+     * User of that profile
+     */
     public function user() {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
 }

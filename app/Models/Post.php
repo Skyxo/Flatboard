@@ -18,8 +18,21 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
 
+    /**
+     * Notation:
+     *  - Laravel Scout for searching (https://laravel.com/docs/5.4/scout)
+     */
+
+    /**
+     * @var string
+     */
     protected $table = 'Post';
 
+    /**
+     * Author of that topic
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function author() {
         return $this->belongsTo(User::class);
     }
