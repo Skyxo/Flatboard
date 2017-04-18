@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+require app_path() .'/Http/Routes/Board.php';
+require app_path() .'/Http/Routes/Thread.php';
+

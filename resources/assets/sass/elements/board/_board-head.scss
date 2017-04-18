@@ -1,0 +1,87 @@
+/**
+ * Board head
+ */
+.board-head {
+
+    & {
+        position: relative;
+        width: 100%;
+        //display: table-row;
+    }
+
+    .board-icon {
+
+        & {
+            display: table-cell;
+            font-size: $fb-board-icon-size;
+            padding: $fb-board-icon-padding;
+            text-align: center;
+            min-width: $fb-board-head-icon-width;
+        }
+
+        i {
+
+        }
+
+    }
+
+    .board-title {
+
+        & {
+            display: table-cell;
+            width: 100%;
+            padding-top: 11px;
+            padding-bottom: 11px;
+
+            @media (min-width: $screen-desktop) {
+                width: 70%;
+            }
+        }
+
+        a.board-title-link {
+            float: none;
+        }
+
+        .board-description {
+            display: block;
+            font-size: 14px;
+            padding-right: 8px;
+        }
+
+    }
+
+    .board-last-thread {
+
+        & {
+            display: none;
+            width: 0;
+
+            @media (min-width: $screen-desktop) {
+                display: table-cell;
+                width: 30%;
+            }
+        }
+
+        span {
+
+        }
+
+    }
+
+    .board-badge {
+
+        & {
+            display: table-cell;
+            padding: 6px 11px 6px 11px;
+            min-width: $fb-board-badge-width;
+            max-width: $fb-board-badge-width;
+            text-align: right;
+        }
+
+        .badge {
+            @include fb-board-badge;
+        }
+
+    }
+
+}

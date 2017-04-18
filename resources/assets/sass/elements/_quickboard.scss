@@ -1,0 +1,76 @@
+.quickboard-container {
+
+    & {
+        position: relative;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: $screen-tablet) {
+            width: 50%;
+        }
+
+        @media (min-width: $screen-desktop) {
+            width: 100%;
+        }
+    }
+
+    .quickboard {
+
+        & {
+            background-color: $light;
+            color: $dark;
+            border-radius: $fb-board-border-radius;
+            @include board-box-shadow;
+            margin-bottom: $fb-margin-bottom;
+        }
+
+        .quickboard-head {
+
+            & {
+                width: 100%;
+                height: 47px;
+                display: table-row;
+            }
+
+            .quickboard-head-icon {
+                display: table-cell;
+                font-size: $fb-board-icon-size;
+                padding: $fb-board-icon-padding;
+                text-align: center;
+                width: $fb-board-head-icon-width;
+            }
+
+            .quickboard-head-title {
+                display: table-cell;
+                width: 100%;
+            }
+
+            .quickboard-head-badge {
+
+                & {
+                    display: table-cell;
+                    padding: 6px 11px 6px 11px;
+                }
+
+                .badge {
+                    @include fb-board-badge;
+                }
+
+            }
+
+        }
+
+        .quickboard-topics {
+
+            & {
+
+            }
+
+        }
+
+    }
+
+}
+
+

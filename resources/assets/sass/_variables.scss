@@ -1,38 +1,48 @@
+$light: #f7f7f7;
+$dark: #333333;
 
-// Body
-$body-bg: #f5f8fa;
+$bg-light: #ffc371;
+$bg-dark: #ff5f6d;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+/**
+ * Board variables
+ */
+$fb-board-border-radius: 5px !default;
+$fb-margin-bottom: 15px !default;
+$fb-board-head-border-color: darken($light, 10%);
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+// Board icon
+$fb-board-icon-padding: 11px !default;
+$fb-board-icon-size: 18px !default;
+$fb-board-head-icon-width: 45px !default;
 
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+// Board badge
+$fb-board-badge-width: 80px !default;
 
-// Navbar
-$navbar-default-bg: #fff;
+/**
+ * Bootstrap variables
+ */
+$grid-float-breakpoint: 99999px;
 
-// Buttons
-$btn-default-color: $text-color;
+$text-color: $dark;
+$font-family-base: "Raleway", sans-serif !default;
+$font-size-base: 16px;
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+// Basics of a navbar
+$navbar-height:                    50px !default;
+$navbar-border-radius:             0 !default;
+$navbar-default-color:             $dark !default;
+$navbar-default-bg:                rgba(0, 0, 0, 0) !default;
+$navbar-default-border:            rgba(0, 0, 0, 0) !default;
 
-// Panels
-$panel-default-heading-bg: #fff;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           transparent !default;
+$navbar-default-toggle-icon-bar-bg:        $bg-light !default;
+$navbar-default-toggle-border-color:       transparent !default;
+
+// Navbar brand label
+$navbar-default-brand-color:               $bg-light !default;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-brand-hover-bg:            transparent !default;
+

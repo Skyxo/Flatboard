@@ -1,0 +1,66 @@
+.main-wrapper {
+
+    & {
+        position: relative;
+        width: 100%;
+    }
+
+    section {
+
+        & {
+            position: relative;
+            width: 100%;
+        }
+
+        &.welcome {
+
+            & {
+                height: 100vh;
+                @include colored-background();
+                @include box-shadow(inset 0 -10px 10px -10px $dark);
+            }
+
+            &:before {
+                position: fixed;
+                content: ' ';
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background-image: url('../../img/checkered-pattern.png');
+                background-repeat: repeat;
+                @include opacity(0.8);
+            }
+
+            .container {
+                height: 100%;
+            }
+        }
+
+        &.board {
+
+            & {
+                @include light-background();
+                min-height: 250px;
+            }
+
+            .board-topic {
+
+                & {
+                    width: 100%;
+                    margin-top: $fb-margin-bottom * 2;
+                }
+
+                h3 {
+                    text-align: center;
+                    color: $bg-dark;
+                    font-size: $font-size-h4;
+                }
+
+            }
+        }
+
+    }
+
+}
+

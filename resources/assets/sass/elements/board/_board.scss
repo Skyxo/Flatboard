@@ -1,0 +1,54 @@
+.board-list > .board {
+
+    & {
+        position: relative;
+        width: 100%;
+        background-color: $light;
+        @include board-box-shadow;
+        margin-bottom: $fb-margin-bottom;
+        border-radius: $fb-board-border-radius;
+    }
+
+    /**
+     * Simple board
+     */
+    &.simple-board {
+
+        & {
+
+        }
+
+        > .board-head {
+            border-bottom: 1px solid $fb-board-head-border-color;
+        }
+
+    }
+
+    /**
+     * Category
+     */
+    &.category {
+
+        & {
+
+        }
+
+        > .board-head {
+
+            & {
+                border-bottom: 1px solid $fb-board-head-border-color;
+            }
+
+            .board-title {
+
+                @media (min-width: $screen-desktop) {
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+    }
+
+}

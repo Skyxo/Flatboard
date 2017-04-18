@@ -1,0 +1,4 @@
+@mixin board-box-shadow {
+    @include box-shadow(0 4px 10px 0px lighten($dark, 50%))
+    //@include box-shadow(0 4px 10px 0px #cacaca)
+}

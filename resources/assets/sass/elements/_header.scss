@@ -1,0 +1,26 @@
+.header-wrapper {
+
+    & {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .navbar-brand {
+
+        &.js-brand-toggle {
+
+            &.js {
+                margin-left: -350px;
+                @include transition(all 0.25s ease-in-out);
+            }
+
+            &.active {
+                margin-left: 0;
+            }
+
+        }
+
+    }
+
+}

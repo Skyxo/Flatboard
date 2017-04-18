@@ -1,0 +1,7 @@
+@mixin colored-background() {
+    @include gradient-directional($bg-dark, $bg-light, 135deg);
+}
+
+@mixin light-background() {
+    background-color: $light;
+}
