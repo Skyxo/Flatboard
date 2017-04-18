@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $table = 'User';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -26,4 +28,22 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function threads() {
+        return $this->hasMany(Thread::class);
+    }
+
+    public function threadVisited() {
+        return $this->hasMany(ThreadVisit::class);
+    }
+
+    public function profile() {
+        return $this->hasOne(Profile::class);
+    }
+
+    public function passwordReset() {
+        return $this->hasOne(PasswordReset::class);
+    }
+
 }
